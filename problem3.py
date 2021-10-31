@@ -16,3 +16,9 @@ def greatest_common_divisor(a, b):
     return greatest_common_divisor(b, r)
 
 print(greatest_common_divisor(a, b))
+
+# test with pytest
+def test_greatest_common_divisor():
+    assert greatest_common_divisor(30, 81) == 3
+
+test_greatest_common_divisor()
